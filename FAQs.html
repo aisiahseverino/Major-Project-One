@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+body {
+    background-color: white;
+}
+h1 {
+    font-family: impact;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;background-image: url(logome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#footer:hover {
+    opacity: 85%;
+}
+
+.col-6 {
+    border-style: solid white;
+    padding: 300px 20px 0px 20px;
+}
+
+.row {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    ;
+}
+
+.container-sm {
+    align-items: center;
+}
+
+.col-4 {
+    background-color: rgb(209, 209, 209);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+em {
+    color: blueviolet;
+}
+
+#rights {
+    border-top-style: solid;
+    border-color: white;
+}
+
+ /*---------------CONTACTUSMODAL--------------------*/
+ .modal-body {
+    text-align: center;
+}
+#contactus {
+    text-align: left;
+    font-weight: 400;
+}
+
+#customer {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#emailhours {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#days {
+    text-align: left;
+    font-size: 18px;
+}
+
+#weekdays {
+    text-align: left;
+    font-size: 18px;
+}
+
+#service {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#servicetime {
+    text-align: left;
+    font-size: 18px;
+}
+
+#myemail {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#phoneservice {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#socmed {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fbicon {
+    align-items: end;
+    width: 30px;
+    margin: 10px;
+}
+
+.btntwo {
+    text-align: right;
+    font-size: 15px;
+}
+/*---------------CONTACTUSMODAL--------------------*/
+/*--------modal-login-----*/
+
+.modal-header-two {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logoalign {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+.modal-body-two {
+    margin: 30px;
+}
+/*--------modal-login-----*/
+/*----------FAQs----------*/
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: none;
+  background-color: rgb(235, 235, 235);
+  overflow: hidden;
+}
+
+.accordion {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/*----------FAQs----------*/
+    </style>
+    <title>Major Project One</title>
+</head>
+
+<body>
+
+<!-------------------------------------------CONTACTUSMODAL--------------------------------------->
+<div class="modal" id="MyModalContactUs">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            
+  
+            <div class="modal-body">
+                <h3 id="contactus"><b>Contact us</b></h3>
+                <br> <br>
+  
+                  <h3 id="customer">Customer Service</h3>
+                  <br>
+                  <h3 id="emailhours">Email service hours</h3>
+  
+                  <h3 id="myemail"><a href="mailto:aisiahseverino77@gmail.com">aisiahseverino77@gmail.com</a></h3>
+                  
+                  <h3 id="days">Monday to Friday: 24 hours a day</h3>
+                  
+                  <h3 id="weekdays">Saturday and Sunday: 8am to 3pm PST</h3>
+                  <br>
+                  <h3 id="service">Phone service hours</h3>
+  
+                  <h3 id="phoneservice"><a href="tel:+6399 1234 9876">+6399 1234 9876</a></h3>
+                  
+                  <h3 id="servicetime">Monday to Friday: 8am to 9pm PST</h3>
+                  <br>
+                  <h3 id="socmed">Social Media Accounts</h3>
+                  <a href="https://www.facebook.com/isaiah.severino" target="_blank"><img class="fbicon" src="facebookicon.png" alt="fbicon"></a>
+                  <a href="https://www.linkedin.com/in/aisiah-severino-3744b0119/" target="_blank"><img class="fbicon" src="linkedincion.png" alt="linkedincion"></a>
+                  <a href="#"><img class="fbicon" src="twittericon.png"></a>
+                  <a href="#"><img class="fbicon" src="instaicon.png"></a>
+                  <h3 type="button" class="btntwo" data-bs-dismiss="modal">close</h3>
+            </div>
+  
+            
+        </div>
+    </div>
+  </div>
+  <!-----------------------------------------------CONTACTUSMODAL--------------------------------------->
+<!-------------------------------------------LogInMODAL--------------------------------------->
+<div class="modal" id="myModalLogIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <div class="logoalign">
+              <img src="logome.png" class="logo"><h6>Sev's Clothing Line</h6>
+            </div>
+            <div class="modal-header-two">
+                <h4 class="modal-title"><b> Log in </b></h4>
+                <h6 class="subtitle">Continue to your account</h6>
+            </div>
+  
+            <div class="modal-body-two">
+              
+                <label for="email" class="Email">Email address</label> <br>
+                <input type="email" class="email" type="email" name="name" required="">
+                <br> <br>
+  
+                <label for="password" class="PassWord">Password</label> <br>
+                <input class="password" type="password" name="name" required="">
+                <br> <br>
+  
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox-input">
+                  <span class="custom-checkbox-span"></span> Remember me
+              </label>
+            </div>
+  
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark"> Log in</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">x</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--------------------------------------------LogInMODAL--------------------------------------->
+
+
+
+<div class="container-sm">
+    <br>
+    <a href="index.html"><h1> FAQ's </h1></a>
+    <br> <br> <br>
+
+    
+        
+        <div>
+
+        <button class="accordion"> HOW TO SHOP AND PLACE AN ORDER </button>
+        <div class="panel">
+          <strong>Do I need an account to place an order?</strong>
+          <p> No, all you need is an email address to place and track orders. To checkout faster, access your wishlist and order updates, we recommend setting up a SEV'S CLOTHING LINE account.</p>
+          <p> If you create a SEV'S CLOTHING LINE account and place an order, you'll be automatically enrolled in our loyalty programme, Access. Every piece you buy takes you one step closer to unlocking exclusive rewards - from early sale access and priority customer care to unlimited free shipping and a dedicated personal stylist.</p>
+          <strong>How do I receive SEV'S CLOTHING LINE email updates?</strong>
+          <p>Stay informed of new arrivals, trends and exclusive promotions by entering your email address at the bottom of our homepage. You can manage your email preferences in your account.</p>
+          <strong>How do I place an order on your website?</strong> <br> <br>
+          <strong>Here's how:</strong> <br> <br>
+          <p>1. Choose a category or brand from the top navigation menu or search to explore a specific style or brand</p>
+          <p>2. Select your desired item and click <strong> Add To Bag. </strong> Once you've added all items, it's time to checkout</p>
+          <p>3. Sign in to your account or, if you've not yet created one, continue via guest checkout</p> <br>
+          <p>Enter your address, payment method and delivery details to place your order. We'll confirm the order and it will be carefully prepared and sent to you, with updates every step of the way.</p>
+          <strong>Can I place an order over the phone?</strong> <br>
+          <p>Sure. Our global Customer Service advisors are happy to assist you with this.</p>
+        </div> <br> <br>
+        
+        <button class="accordion"> SEVS' CLOTHING LINE PRICING AND PAYMENT </button>
+        <div class="panel">
+          <strong>Why is SEVS' CLOTHING LINE pricing different?</strong> <br> <br>
+          <p> It's down to our unique business model. At SEVS' CLOTHING LINE, you're shopping items from our luxury brands and partner boutiques worldwide. </p>
+          <p> Prices are determined by each SEVS' CLOTHING LINE brand and partner boutique, so the price of the same item may vary depending on where it's coming from and your location. That's also why placing an item in your shopping bag or wishlist won't reserve it at a particular price. </p>
+          <p> Although we don't have any control over price variation, we'll always offer you the best price available to your destination when you place your order. </p>
+          <p> To view the most accurate prices, select your delivery destination on our website. </p>
+          <strong> Which currencies can I shop in? </strong> <br> <br>
+          <p> This is determined by your delivery destination and will be displayed at checkout before placing your order. If your local currency is unavailable, your order will be charged in PHP for a competitive exchange rate </p>
+          <strong>When will my card be charged?</strong> <br> <br>
+          <p> If you pay by debit card, cryptocurrency or PayPal, SEV'S CLOTHING LINE will take payment when you place your order. </p>
+          <strong> Which payment methods do you accept? </strong> <br> <br>
+          <ul>
+            <li>GCash</li>
+            <li>Maya</li>
+            <li>PayPal</li>
+            <li>Visa</li>
+            <li>MasterCard</li>
+            <li>Apple Pay</li>
+            <li>CoinsPH</li>
+          </ul>
+        </div> <br> <br>
+        
+        <button class="accordion"> PRODUCT AVAILABILITY, AUTHENTICITY AND PRE-OWNED ITEMS </button>
+        <div class="panel">
+          <strong> Are you going to have my size again? </strong> <br> <br>
+          <p> To be notified about a sold out item being back in stock, go to the product information page. Select your size on the dropdown menu and choose <strong>size missing,</strong> then enter your email address and the size you need. </p>
+          <strong> Can I reserve an item to buy later? </strong> <br> <br>
+          <p> We aim to provide a fair opportunity to shop our most in-demand styles and as items are often limited, we don't offer reservations. </p>
+          <strong> Are SEV'S CLOTHING LINE items guaranteed authentic? </strong> <br> <br>
+          <p> Our offering is expertly curated by the best luxury fashion brands and boutiques around the globe and all our items are guaranteed authentic. </p>
+          <strong> How will my order be packaged? </strong> <br> <br>
+          <p> Your order will be carefully prepared in a protective SEV'S CLOTHING LINE package. If the designer has provided any branded boxes, dust bags or cases, these will also be included. </p>
+          <strong> Do your pre-owned items come in different conditions? </strong> <br> <br>
+          <p> Yes, our pre-owned items come in the following conditions: </p>
+          <p><strong> Unworn with tags: </strong> previously owned but never been used and in original condition. This item comes with its original tags. </p>
+          <p><strong> Unworn: </strong> previously owned but never been used and in original condition. This item comes without its original tags. </p>
+          <p><strong> Excellent: </strong> previously owned and worn, but like new or with almost no signs of use. This item is still in almost perfect condition with no defects. </p>
+          <p><strong> Good: </strong> previously owned and worn with some signs of use. This item may have some fading (of material or plating), patina or scratches. </p>
+        </div> <br> <br>
+
+        <button class="accordion"> DELIVERY, DUTIES AND TAXES </button>
+        <div class="panel">
+          <strong> How much will I be charged for delivery? </strong>
+          <p> This varies depending on the size, weight and destination of your chosen items. The good news is we offer One Delivery Fee for orders above a certain threshold - this means you can order multiple pieces from multiple locations for one fee. You'll see the delivery fee at the checkout. </p>
+          <strong> Do you offer Same Day delivery? </strong>
+          <p> Yes, we offer a Same Day delivery service Natiowide. Order before 11:00 in the morning to receive your delivery the same day, and after 11:00 for the next business day. </p>
+          <strong> When will I receive my item and how can I track delivery? </strong>
+          <p> Once your order is confirmed, we'll send it within 2 business days. Depending on your location and selected delivery method, delivery can take 2-7 business days. If you ordered from multiple SEV'S CLOTHING LINE brands and partner boutiques, your items will arrive separately. We'll email you with the tracking information and an estimated delivery date when each item is sent. </p>
+        </div> <br> <br>
+        
+        <button class="accordion"> RETURNS AND REFUNDS </button>
+        <div class="panel">
+          <strong> What is SEV'S CLOTHING LINE's returns policy? </strong>
+          <p> We offer a refund on any items returned to us within 14 days of the delivery date, excluding any delivery costs. You can use our Free Collection service to return any unwanted items. </p>
+          <p> If you have used cryptocurrency to pay for your order and you wish to return the items for a refund, you can follow the return procedure outlined below within 30 days from the date you placed your order. Once your return has been accepted by our brand or partner boutique, your refund will be processed by TripleA in the original cryptocurrency at the current exchange rate. </p>
+          <p> Our payment provider will use the email address you provided at checkout and email you as soon as your refund has been processed. Once a refund is successfully claimed by you, the crypto should return to your wallet within the same business day depending on how congested blockchain is. </p>
+        </div> <br> <br>
+        
+        </div> <br>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+            
+       for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+               } else {
+              panel.style.display = "block";
+              }
+              });
+            }
+</script>
+
+
+<footer>
+  <div class="row">
+    <div class="col-4 p-2"><b>Customer Service</b></div>
+    <div class="col-4 p-2"><b>About SEV'S CLOTHING</b></div>
+    <div class="col-4 p-2"><b>Discount and membership</b></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer" data-bs-toggle="modal" data-bs-target="#MyModalContactUs"><a href="#"> Contact Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourmission.html"> Mission </a></div>
+  <div class="col-4 p-2" data-bs-toggle="modal" data-bs-target="#myModalLogIn" id="footer"><a href="#"> Login </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer"><a href="aboutus.html"> About Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourvision.html"> Vision </a></div>
+  <div class="col-4 p-2" id="footer"><a href="FAQs.html"> FAQs </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+</div>
+<div class="row" id="rights">
+  <div class="col-4 p-2"></div>
+  <div class="col-4 p-2">© Copyright 2023 SEV'S CLOTHING LINE. All rights reserved.</div>
+  <div class="col-4 p-2"></div>
+</div>
+
+
+
+</footer>
+      
+</div>
+</body>
+</html>

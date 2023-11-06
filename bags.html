@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+body {
+    background-color: white;
+}
+h1 {
+    font-family: impact;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;background-image: url(logome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#footer:hover {
+    opacity: 85%;
+}
+
+.col-6 {
+    border-style: solid white;
+    padding: 300px 20px 0px 20px;
+}
+
+.row {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    ;
+}
+
+.container-sm {
+    align-items: center;
+}
+
+.col-4 {
+    background-color: rgb(209, 209, 209);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+em {
+    color: blueviolet;
+}
+
+#rights {
+    border-top-style: solid;
+    border-color: white;
+}
+
+ /*---------------CONTACTUSMODAL--------------------*/
+ .modal-body {
+    text-align: center;
+}
+#contactus {
+    text-align: left;
+    font-weight: 400;
+}
+
+#customer {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#emailhours {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#days {
+    text-align: left;
+    font-size: 18px;
+}
+
+#weekdays {
+    text-align: left;
+    font-size: 18px;
+}
+
+#service {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#servicetime {
+    text-align: left;
+    font-size: 18px;
+}
+
+#myemail {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#phoneservice {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#socmed {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fbicon {
+    align-items: end;
+    width: 30px;
+    margin: 10px;
+}
+
+.btntwo {
+    text-align: right;
+    font-size: 15px;
+}
+/*---------------CONTACTUSMODAL--------------------*/
+/*--------modal-login-----*/
+
+.modal-header-two {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logoalign {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+.modal-body-two {
+    margin: 30px;
+}
+/*--------modal-login-----*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+    </style>
+    <title>Major Project One</title>
+</head>
+
+<body>
+
+<!-------------------------------------------CONTACTUSMODAL--------------------------------------->
+<div class="modal" id="MyModalContactUs">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            
+  
+            <div class="modal-body">
+                <h3 id="contactus"><b>Contact us</b></h3>
+                <br> <br>
+  
+                  <h3 id="customer">Customer Service</h3>
+                  <br>
+                  <h3 id="emailhours">Email service hours</h3>
+  
+                  <h3 id="myemail"><a href="mailto:aisiahseverino77@gmail.com">aisiahseverino77@gmail.com</a></h3>
+                  
+                  <h3 id="days">Monday to Friday: 24 hours a day</h3>
+                  
+                  <h3 id="weekdays">Saturday and Sunday: 8am to 3pm PST</h3>
+                  <br>
+                  <h3 id="service">Phone service hours</h3>
+  
+                  <h3 id="phoneservice"><a href="tel:+6399 1234 9876">+6399 1234 9876</a></h3>
+                  
+                  <h3 id="servicetime">Monday to Friday: 8am to 9pm PST</h3>
+                  <br>
+                  <h3 id="socmed">Social Media Accounts</h3>
+                  <a href="https://www.facebook.com/isaiah.severino" target="_blank"><img class="fbicon" src="facebookicon.png" alt="fbicon"></a>
+                  <a href="https://www.linkedin.com/in/aisiah-severino-3744b0119/" target="_blank"><img class="fbicon" src="linkedincion.png" alt="linkedincion"></a>
+                  <a href="#"><img class="fbicon" src="twittericon.png"></a>
+                  <a href="#"><img class="fbicon" src="instaicon.png"></a>
+                  <h3 type="button" class="btntwo" data-bs-dismiss="modal">close</h3>
+            </div>
+  
+            
+        </div>
+    </div>
+  </div>
+  <!-----------------------------------------------CONTACTUSMODAL--------------------------------------->
+<!-------------------------------------------LogInMODAL--------------------------------------->
+<div class="modal" id="myModalLogIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <div class="logoalign">
+              <img src="logome.png" class="logo"><h6>Sev's Clothing Line</h6>
+            </div>
+            <div class="modal-header-two">
+                <h4 class="modal-title"><b> Log in </b></h4>
+                <h6 class="subtitle">Continue to your account</h6>
+            </div>
+  
+            <div class="modal-body-two">
+              
+                <label for="email" class="Email">Email address</label> <br>
+                <input type="email" class="email" type="email" name="name" required="">
+                <br> <br>
+  
+                <label for="password" class="PassWord">Password</label> <br>
+                <input class="password" type="password" name="name" required="">
+                <br> <br>
+  
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox-input">
+                  <span class="custom-checkbox-span"></span> Remember me
+              </label>
+            </div>
+  
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark"> Log in</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">x</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--------------------------------------------LogInMODAL--------------------------------------->
+
+
+
+<div class="container-sm">
+    <br>
+    <a href="index.html"><h1>BAGS</h1></a>
+    <br> <br> <br>
+
+    <div class="grid-container">
+    <div class="card">
+        <img src="https://cdn-images.farfetch-contents.com/21/95/43/75/21954375_51678042_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+        <h2> Bagboy </h2>
+        <p class="price">₱645</p>
+        <p>Plaid biege bag</p>
+        <p><button><a href="checkout.html">Add to Cart</a></button></p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-images.farfetch-contents.com/18/95/06/53/18950653_41227620_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+        <h2> Jacquemus </h2>
+        <p class="price">₱1,350</p>
+        <p>Le Grand Bambino crossbody bag</p>
+        <p><button><a href="checkout.html">Add to Cart</a></button></p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-images.farfetch-contents.com/20/73/55/45/20735545_51316758_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+        <h2> Marc Jacobs </h2>
+        <p class="price">₱750</p>
+        <p>The Small Tote bag</p>
+        <p><button><a href="checkout.html">Add to Cart</a></button></p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-images.farfetch-contents.com/19/46/75/02/19467502_43435023_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+        <h2> Prada </h2>
+        <p class="price">₱1,650</p>
+        <p>small Galleria leather tote bag</p>
+        <p><button><a href="checkout.html">Add to Cart</a></button></p>
+      </div>
+      </div> <br>
+
+      <div class="grid-container">
+        <div class="card">
+            <img src="https://cdn-images.farfetch-contents.com/20/25/74/22/20257422_50548223_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+            <h2> Balenciaga </h2>
+            <p class="price">₱1,150</p>
+            <p>Mary-Kate XS leather tote bag</p>
+            <p><button><a href="checkout.html">Add to Cart</a></button></p>
+          </div>
+          <div class="card">
+            <img src="https://cdn-images.farfetch-contents.com/20/23/43/51/20234351_50148049_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+            <h2> Burberry </h2>
+            <p class="price">₱1,099</p>
+            <p>medium London shoulder bag</p>
+            <p><button><a href="checkout.html">Add to Cart</a></button></p>
+          </div>
+          <div class="card">
+            <img src="https://cdn-images.farfetch-contents.com/19/94/96/39/19949639_50265341_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+            <h2> Valentino Garavani </h2>
+            <p class="price">₱1,085</p>
+            <p>medium VLogo Signature Panther-print tote bag</p>
+            <p><button><a href="checkout.html">Add to Cart</a></button></p>
+          </div>
+          <div class="card">
+            <img src="https://cdn-images.farfetch-contents.com/12/14/71/50/12147150_10104999_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+            <h2> Gucci </h2>
+            <p class="price">₱999</p>
+            <p>GG Supreme messenger bag</p>
+            <p><button><a href="checkout.html">Add to Cart</a></button></p>
+          </div>
+          </div> <br>
+
+          <div class="grid-container">
+            <div class="card">
+                <img src="https://cdn-images.farfetch-contents.com/21/27/43/15/21274315_51506964_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+                <h2> Boggi Milano </h2>
+                <p class="price">₱950</p>
+                <p>logo-appliqué zip-up coated backpack</p>
+                <p><button><a href="checkout.html">Add to Cart</a></button></p>
+              </div>
+              <div class="card">
+                <img src="https://cdn-images.farfetch-contents.com/18/75/83/09/18758309_42359354_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+                <h2> Karl Lagerfeld </h2>
+                <p class="price">₱1,050</p>
+                <p>K/Ikonik 2.0 messenger bag</p>
+                <p><button><a href="checkout.html">Add to Cart</a></button></p>
+              </div>
+              <div class="card">
+                <img src="https://cdn-images.farfetch-contents.com/17/78/26/37/17782637_37965612_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+                <h2> Ferragamo </h2>
+                <p class="price">₱1,450</p>
+                <p>Gancini carry-on suitcase</p>
+                <p><button><a href="checkout.html">Add to Cart</a></button></p>
+              </div>
+              <div class="card">
+                <img src="https://cdn-images.farfetch-contents.com/17/75/88/18/17758818_37304700_1000.jpg" alt="Sev's Clothing Line" style="width:100%">
+                <h2> Gucci </h2>
+                <p class="price">₱850</p>
+                <p>Jumbo GG tote bag</p>
+                <p><button><a href="checkout.html">Add to Cart</a></button></p>
+              </div>
+              </div> <br>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-4 p-2"><b>Customer Service</b></div>
+    <div class="col-4 p-2"><b>About SEV'S CLOTHING</b></div>
+    <div class="col-4 p-2"><b>Discount and membership</b></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer" data-bs-toggle="modal" data-bs-target="#MyModalContactUs"><a href="#"> Contact Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourmission.html"> Mission </a></div>
+  <div class="col-4 p-2" data-bs-toggle="modal" data-bs-target="#myModalLogIn" id="footer"><a href="#"> Login </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer"><a href="aboutus.html"> About Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourvision.html"> Vision </a></div>
+  <div class="col-4 p-2" id="footer"><a href="FAQs.html"> FAQs </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+</div>
+<div class="row" id="rights">
+  <div class="col-4 p-2"></div>
+  <div class="col-4 p-2">© Copyright 2023 SEV'S CLOTHING LINE. All rights reserved.</div>
+  <div class="col-4 p-2"></div>
+</div>
+
+
+
+</footer>
+      
+</div>
+</body>
+</html>

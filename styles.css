@@ -1,0 +1,259 @@
+body {
+    background-color: white;
+}
+h1 {
+    font-family: impact;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    background-image: url(logome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: block;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#footer:hover {
+    opacity: 85%;
+}
+
+li a:hover {
+    background-color: #B4B8C5;
+    border-radius: 10px;
+}
+
+.linetwo {
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.ads {
+    max-width: auto;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: solid white;
+}
+
+.col-6 {
+    border-style: solid white;
+    padding: 300px 20px 0px 20px;
+}
+
+.row {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+  
+.item {
+    text-align: center;
+}
+
+.container-sm {
+    align-items: center;
+}
+
+.col-4 {
+    background-color: rgb(209, 209, 209);
+}
+
+#rights {
+    border-top-style: solid;
+    border-color: white;
+}
+
+.modal-title {
+    font-weight: lighter;
+}
+
+.modal-header {
+    background-color: antiquewhite;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.firstname {
+    border-radius: 7px;
+    border-color: black;
+    border-style: solid;
+}
+
+.lastname { 
+    border-radius: 7px;
+    border-color: black;
+    border-style: solid;
+}
+
+.email {
+    border-radius: 7px;
+    border-color: black;
+    border-style: solid;
+}
+
+.password {
+    border-radius: 7px;
+    border-color: black;
+    border-style: solid;
+}
+
+.phonenumber {
+    border-radius: 7px;
+    border-color: black;
+    border-style: solid;
+}
+
+.FirstName {
+    font-size: small;
+}
+
+.LastName {
+    font-size: small;
+}
+
+.Email {
+    font-size: small;
+}
+
+.PassWord {
+    font-size: small;
+}
+
+.PhoneNumber {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contactus {
+    text-align: left;
+    font-weight: 400;
+}
+
+#customer {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#emailhours {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#days {
+    text-align: left;
+    font-size: 18px;
+}
+
+#weekdays {
+    text-align: left;
+    font-size: 18px;
+}
+
+#service {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#servicetime {
+    text-align: left;
+    font-size: 18px;
+}
+
+#myemail {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#phoneservice {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#socmed {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fbicon {
+    align-items: end;
+    width: 30px;
+    margin: 10px;
+}
+
+.btntwo {
+    text-align: right;
+    font-size: 15px;
+}
+
+/*--------modal-login-----*/
+
+.modal-header-two {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logoalign {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+.modal-body-two {
+    margin: 30px;
+}
+/*--------modal-login-----*/

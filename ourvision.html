@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Major Project One </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    justify-content: center;
+    color: yellow;
+}
+
+.no-underline-link {
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+h1 {
+    font-family: impact;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    background-image: url(logome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#footer:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.col-6 {
+    border-style: solid white;
+    padding: 300px 20px 0px 20px;
+}
+
+.row {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    ;
+}
+
+.container-sm {
+    align-items: center;
+}
+
+.col-4 {
+    background-color: rgb(209, 209, 209);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+em {
+    color: blueviolet;
+}
+
+#rights {
+    border-top-style: solid;
+    border-color: white;
+}
+
+ /*---------------CONTACTUSMODAL--------------------*/
+ .modal-body {
+    text-align: center;
+}
+#contactus {
+    text-align: left;
+    font-weight: 400;
+}
+
+#customer {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#emailhours {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#days {
+    text-align: left;
+    font-size: 18px;
+}
+
+#weekdays {
+    text-align: left;
+    font-size: 18px;
+}
+
+#service {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#servicetime {
+    text-align: left;
+    font-size: 18px;
+}
+
+#myemail {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#phoneservice {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#socmed {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fbicon {
+    align-items: end;
+    width: 30px;
+    margin: 10px;
+}
+
+.btntwo {
+    text-align: right;
+    font-size: 15px;
+}
+/*---------------CONTACTUSMODAL--------------------*/
+/*--------modal-login-----*/
+
+.modal-header-two {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logoalign {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+.modal-body-two {
+    margin: 30px;
+}
+/*--------modal-login-----*/
+  </style>
+  <title>Major Project One</title>
+</head>
+<body>
+<!-------------------------------------------CONTACTUSMODAL--------------------------------------->
+<div class="modal" id="MyModalContactUs">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            
+  
+            <div class="modal-body">
+                <h3 id="contactus"><b>Contact us</b></h3>
+                <br> <br>
+  
+                  <h3 id="customer">Customer Service</h3>
+                  <br>
+                  <h3 id="emailhours">Email service hours</h3>
+  
+                  <h3 id="myemail"><a href="mailto:aisiahseverino77@gmail.com">aisiahseverino77@gmail.com</a></h3>
+                  
+                  <h3 id="days">Monday to Friday: 24 hours a day</h3>
+                  
+                  <h3 id="weekdays">Saturday and Sunday: 8am to 3pm PST</h3>
+                  <br>
+                  <h3 id="service">Phone service hours</h3>
+  
+                  <h3 id="phoneservice"><a href="tel:+6399 1234 9876">+6399 1234 9876</a></h3>
+                  
+                  <h3 id="servicetime">Monday to Friday: 8am to 9pm PST</h3>
+                  <br>
+                  <h3 id="socmed">Social Media Accounts</h3>
+                  <a href="https://www.facebook.com/isaiah.severino" target="_blank"><img class="fbicon" src="facebookicon.png" alt="fbicon"></a>
+                  <a href="https://www.linkedin.com/in/aisiah-severino-3744b0119/" target="_blank"><img class="fbicon" src="linkedincion.png" alt="linkedincion"></a>
+                  <a href="#"><img class="fbicon" src="twittericon.png"></a>
+                  <a href="#"><img class="fbicon" src="instaicon.png"></a>
+                  <h3 type="button" class="btntwo" data-bs-dismiss="modal">close</h3>
+            </div>
+  
+            
+        </div>
+    </div>
+  </div>
+  <!-----------------------------------------------CONTACTUSMODAL--------------------------------------->
+<!-------------------------------------------LogInMODAL--------------------------------------->
+<div class="modal" id="myModalLogIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <div class="logoalign">
+              <img src="logome.png" class="logo"><h6>Sev's Clothing Line</h6>
+            </div>
+            <div class="modal-header-two">
+                <h4 class="modal-title"><b> Log in </b></h4>
+                <h6 class="subtitle">Continue to your account</h6>
+            </div>
+  
+            <div class="modal-body-two">
+              
+                <label for="email" class="Email">Email address</label> <br>
+                <input type="email" class="email" type="email" name="name" required="">
+                <br> <br>
+  
+                <label for="password" class="PassWord">Password</label> <br>
+                <input class="password" type="password" name="name" required="">
+                <br> <br>
+  
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox-input">
+                  <span class="custom-checkbox-span"></span> Remember me
+              </label>
+            </div>
+  
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark"> Log in</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">x</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--------------------------------------------LogInMODAL--------------------------------------->
+<div class="container-sm">
+    <br>
+    <a href="index.html"><h1>OUR VISION</h1></a>
+    <br> <br> <br>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="visionbg.png" alt="Clothing Vision Statement" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="visionbg2.png" alt="Target Audience" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="visionbg3.png" alt="Future Goals" width="1100" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+<br/> <br/> <br/> <br/>
+
+
+<footer>
+    <div class="row">
+      <div class="col-4 p-2"><b>Customer Service</b></div>
+      <div class="col-4 p-2"><b>About SEV'S CLOTHING</b></div>
+      <div class="col-4 p-2"><b>Discount and membership</b></div>
+  </div>
+  <div class="row">
+    <div class="col-4 p-2" id="footer" data-bs-toggle="modal" data-bs-target="#MyModalContactUs"><a href="#"> Contact Us </a></div>
+    <div class="col-4 p-2" id="footer"><a href="ourmission.html"> Mission </a></div>
+    <div class="col-4 p-2" data-bs-toggle="modal" data-bs-target="#myModalLogIn" id="footer"><a href="#"> Login </a></div>
+  </div>
+  <div class="row">
+    <div class="col-4 p-2" id="footer"><a href="aboutus.html"> About Us </a></div>
+    <div class="col-4 p-2" id="footer"><a href="ourvision.html"> Vision </a></div>
+    <div class="col-4 p-2" id="footer"><a href="FAQs.html"> FAQs </a></div>
+  </div>
+  <div class="row">
+    <div class="col-4 p-4"></div>
+    <div class="col-4 p-4"></div>
+    <div class="col-4 p-4"></div>
+  </div>
+  <div class="row" id="rights">
+    <div class="col-4 p-2"></div>
+    <div class="col-4 p-2">© Copyright 2023 SEV'S CLOTHING LINE. All rights reserved.</div>
+    <div class="col-4 p-2"></div>
+  </div>
+  </footer>
+</div>
+</body>
+</html>

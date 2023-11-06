@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+body {
+    background-color: white;
+}
+h1 {
+    font-family: impact;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;background-image: url(logome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#footer:hover {
+    opacity: 85%;
+}
+
+footer {
+    text-align: center;
+}
+
+.col-6 {
+    border-style: solid white;
+    padding: 300px 20px 0px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    ;
+}
+
+.container-sm {
+    align-items: center;
+}
+
+.col-4 {
+    background-color: rgb(209, 209, 209);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+em {
+    color: blueviolet;
+}
+
+#rights {
+    border-top-style: solid;
+    border-color: white;
+}
+
+ /*---------------CONTACTUSMODAL--------------------*/
+.modal-body {
+    text-align: center;
+}
+#contactus {
+    text-align: left;
+    font-weight: 400;
+}
+
+#customer {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#emailhours {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#days {
+    text-align: left;
+    font-size: 18px;
+}
+
+#weekdays {
+    text-align: left;
+    font-size: 18px;
+}
+
+#service {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#servicetime {
+    text-align: left;
+    font-size: 18px;
+}
+
+#myemail {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#phoneservice {
+    text-align: left;
+    font-size: 18px;
+    color: blue;
+}
+
+#socmed {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fbicon {
+    align-items: end;
+    width: 30px;
+    margin: 10px;
+}
+
+.btntwo {
+    text-align: right;
+    font-size: 15px;
+}
+/*---------------CONTACTUSMODAL--------------------*/
+/*--------modal-login-----*/
+
+.modal-header-two {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logoalign {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.subtitle {
+    font-weight: lighter;
+}
+
+.modal-body-two {
+    margin: 30px;
+}
+/*--------modal-login-----*/
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color:black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+    </style>
+    <title>Major Project One</title>
+</head>
+
+<body>
+
+<!-------------------------------------------CONTACTUSMODAL--------------------------------------->
+<div class="modal" id="MyModalContactUs">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            
+  
+            <div class="modal-body">
+                <h3 id="contactus"><b>Contact us</b></h3>
+                <br> <br>
+  
+                  <h3 id="customer">Customer Service</h3>
+                  <br>
+                  <h3 id="emailhours">Email service hours</h3>
+  
+                  <h3 id="myemail"><a href="mailto:aisiahseverino77@gmail.com">aisiahseverino77@gmail.com</a></h3>
+                  
+                  <h3 id="days">Monday to Friday: 24 hours a day</h3>
+                  
+                  <h3 id="weekdays">Saturday and Sunday: 8am to 3pm PST</h3>
+                  <br>
+                  <h3 id="service">Phone service hours</h3>
+  
+                  <h3 id="phoneservice"><a href="tel:+6399 1234 9876">+6399 1234 9876</a></h3>
+                  
+                  <h3 id="servicetime">Monday to Friday: 8am to 9pm PST</h3>
+                  <br>
+                  <h3 id="socmed">Social Media Accounts</h3>
+                  <a href="https://www.facebook.com/isaiah.severino" target="_blank"><img class="fbicon" src="facebookicon.png" alt="fbicon"></a>
+                  <a href="https://www.linkedin.com/in/aisiah-severino-3744b0119/" target="_blank"><img class="fbicon" src="linkedincion.png" alt="linkedincion"></a>
+                  <a href="#"><img class="fbicon" src="twittericon.png"></a>
+                  <a href="#"><img class="fbicon" src="instaicon.png"></a>
+                  <h3 type="button" class="btntwo" data-bs-dismiss="modal">close</h3>
+            </div>
+  
+            
+        </div>
+    </div>
+  </div>
+  <!-----------------------------------------------CONTACTUSMODAL--------------------------------------->
+<!-------------------------------------------LogInMODAL--------------------------------------->
+<div class="modal" id="myModalLogIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <div class="logoalign">
+              <img src="logome.png" class="logo"><h6>Sev's Clothing Line</h6>
+            </div>
+            <div class="modal-header-two">
+                <h4 class="modal-title"><b> Log in </b></h4>
+                <h6 class="subtitle">Continue to your account</h6>
+            </div>
+  
+            <div class="modal-body-two">
+              
+                <label for="email" class="Email">Email address</label> <br>
+                <input type="email" class="email" type="email" name="name" required="">
+                <br> <br>
+  
+                <label for="password" class="PassWord">Password</label> <br>
+                <input class="password" type="password" name="name" required="">
+                <br> <br>
+  
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox-input">
+                  <span class="custom-checkbox-span"></span> Remember me
+              </label>
+            </div>
+  
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-dark"> Log in </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">x</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!---------------------------------------------LogInMODAL--------------------------------------->
+  <!--------------------------------------------CheckOutMODAL--------------------------------------->
+<div class="modal" id="myModalCheckout">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <div class="logoalign">
+              <img src="logome.png" class="logo"><h6>Sev's Clothing Line</h6>
+            </div>
+            <div class="modal-header-two">
+                <h4 class="modal-title"><b> Payment Successful </b></h4>
+                <h6 class="subtitle"> Thank you for shopping with <em>Sev's Clothing Line </em> </h6>
+            </div>
+  
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark"><a href="index.html"> RETURN TO HOMEPAGE </a></button>
+                <button type="button" class="btn btn-secondary"><a href="clothing.html"> CONTINUE SHOPPING </a></button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--------------------------------------------CheckOutMODAL--------------------------------------->
+
+
+
+<div class="container-sm">
+    <br>
+    <a href="index.html"><h1>CHECKOUT</h1></a>
+    <br> <br> <br>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="#">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3> <br>
+                  <label for="fname"><img src="user.png" width="15px"> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Juan Dela Cruz">
+                  <label for="email"><img src="emailicon.png" width="15px"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="juandelacruz@gmail.com">
+                  <label for="adr"><img src="addressicon.png" width="25px"> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="Devinegracia Street">
+                  <label for="city"><img src="cityicon.png" width="18px"> City</label>
+                  <input type="text" id="city" name="city" placeholder="Cavite">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="region">Region</label>
+                      <input type="text" id="region" name="region" placeholder="Region IV">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="4100">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <img src="gcashicon.png" width="20px">
+                    <img src="mayaicon.jpg" width="30px">
+                    <img src="paypalicon.png" width="55px">
+                    <img src="visaicon.jpg" width="30px">
+                    <img src="mastercardicon.png" width="30px">
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Juan Dela Cruz">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2025">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn" data-bs-toggle="modal" data-bs-target="#myModalCheckout">
+            </form>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart
+              <span class="price" style="color:black">
+                <img src="carticon.png" width="20px">
+                <b>4</b>
+              </span>
+            </h4>
+            <p><a href="#">Bagboy</a> <span class="price">₱1,500</span></p>
+            <p><a href="#">OffWhi..</a> <span class="price">₱1,099</span></p>
+            <p><a href="#">Severi..</a> <span class="price">₱1,200</span></p>
+            <p><a href="#">Sander...</a> <span class="price">₱950</span></p>
+            <hr>
+            <p>Total<span class="price" style="color:black"><b>₱4,749</b></span></p>
+          </div>
+        </div>
+      </div>
+    <div class="grid-container">
+    </div> <br>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-4 p-2"><b>Customer Service</b></div>
+    <div class="col-4 p-2"><b>About SEV'S CLOTHING</b></div>
+    <div class="col-4 p-2"><b>Discount and membership</b></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer" data-bs-toggle="modal" data-bs-target="#MyModalContactUs"><a href="#"> Contact Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourmission.html"> Mission </a></div>
+  <div class="col-4 p-2" data-bs-toggle="modal" data-bs-target="#myModalLogIn" id="footer"><a href="#"> Login </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-2" id="footer"><a href="aboutus.html"> About Us </a></div>
+  <div class="col-4 p-2" id="footer"><a href="ourvision.html"> Vision </a></div>
+  <div class="col-4 p-2" id="footer"><a href="FAQs.html"> FAQs </a></div>
+</div>
+<div class="row">
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+  <div class="col-4 p-4"></div>
+</div>
+<div class="row" id="rights">
+  <div class="col-4 p-2"></div>
+  <div class="col-4 p-2">© Copyright 2023 SEV'S CLOTHING LINE. All rights reserved.</div>
+  <div class="col-4 p-2"></div>
+</div>
+
+
+
+</footer>
+      
+</div>
+</body>
+</html>
